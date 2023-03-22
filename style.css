@@ -1,0 +1,214 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #170f20;
+    margin: 0;
+  }
+  
+  .main-title {
+    font-size: 2.5em;
+    color: #a5b4fc;
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px;
+  }
+  
+  .title-carroussel {
+    color: #a5b4fc;
+    margin-top : 100px;
+
+    left: 0;
+  }
+
+  p,
+  li {
+    font-size: 1.1em;
+    color: #f9f8ff;
+  }
+
+  .entete,
+  .pied-de-page {
+    background-color: rgb(98, 79, 119);
+    padding : 2px;
+    text-align: left;
+  }
+
+  .image-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+  }
+  
+  .image-list, li {
+    padding: 10px;
+  }
+  
+  .image-list, li, img {
+    width: 100%;
+    height: auto;
+  }
+
+  .film {
+    position: relative;
+  }
+
+  .film-title {
+    position: bottom;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #d4d8eb;
+    font-size: 1.2rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
+  .movie-title {
+    font-size: 2em;
+    font-family: 'Manrope', sans-serif;
+    color: #c4beec;
+  }
+  
+  
+  .movie-poster {
+    margin-top: 10px
+  }
+  
+  .movie-info {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
+  }
+
+  button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.2s;
+  }
+
+  button:hover {
+    background-color: #56315c;
+    border: none;
+    color: white;
+  } 
+
+  .btn-previous {
+    float : left;
+    float: top;
+    margin-left: 20px;
+  }
+
+  .btn-next {
+    float : right;
+    margin-right: 20px;
+  }
+
+  .list-item {
+    display: none;
+  }
+
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .list-item-display {
+    display: block;
+    animation: fadeInOpacity 600ms;
+  } 
+
+#best-film {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #38182c;
+}
+
+.bestfilm img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  float:left;
+}
+
+.bestfilm-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bestfilm-desc {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.bestfilm-title .bestfilm-desc {
+  margin-left:30%;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  overflow: auto;
+}
+
+.modal-content img {
+  width: 85%; /* temp*/
+}
+
+.modal-text {
+  color :#170f20
+}
+
+.modal-content .movie-poster {
+  float:left;
+  width:30%;
+}
+
+.modal-content .movie-info {
+  margin-left:30%;
+}
+
+.close-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-modal:hover, 
+.close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
