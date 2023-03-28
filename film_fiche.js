@@ -100,11 +100,16 @@ function displayBestFilm() {
     bestfilminfoDiv.appendChild(titleElement);
     bestfilminfoDiv.appendChild(descriptionElement);
 
+   
+
     const bestfilmDiv = document.createElement("div");
     bestfilmDiv.classList.add("bestfilm");
     bestfilmDiv.appendChild(imageElement);
     bestfilmDiv.appendChild(bestfilminfoDiv);
 
+    imageElement.onclick = function() {
+          displayModal(9008642);
+        };
     const filmsListe = document.getElementById("best-film");
     filmsListe.appendChild(bestfilmDiv);  
   });
