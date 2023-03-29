@@ -124,19 +124,22 @@ function displayModal(id) {
         <div class = "movie-poster">
             <img src = "${film.image_url}" alt = "poster du film :${film.title}">
             <h3 class = "movie-title modal-text">${film.title}</h3>
+            <p class = "duration modal-text"><b>Durée:</b> ${film.duration} minutes</p>
         </div>
         <div class = "movie-info">
         <span class="close-modal" id="cross">&times;</span>
             <ul class = "movie-misc-info">
-                <li class = "rated modal-text">Note: ${film.rated}</li>
+                <li class = "imdb_score modal-text">IMDB Score:<b> ${film.imdb_score}&#x2605;</b></li>
                 <li class = "released modal-text">Publication: ${film.date_published}</li>
+                <li class = "countries modal-text">Pays d'origine: ${film.countries}</li>
             </ul>
             <p class = "genres modal-text"><b>Genre(s):</b> ${film.genres}</p>
-            <p class = "writers modal-text"><b>Auteur.ice(s):</b> ${film.writers}</p>
+            <p class = "writers modal-text"><b>Réalisateur.ice(s):</b> ${film.writers}</p>
             <p class = "actors modal-text"><b>Acteur.ice(s): </b>${film.actors}</p>
             <p class = "long-description modal-text"><b>Description:</b> ${film.long_description}</p>
             <p class = "languages modal-text"><b>Langage(s):</b> ${film.languages}</p>
             <p class = "box-office modal-text"><b>BoxOffice Mondial :</b> ${film.worldwide_gross_income}$</p>
+            <p class = "Durée modal-text"><b>Genre(s):</b> ${film.genres}</p>
         </div>
       </div>
     `;
