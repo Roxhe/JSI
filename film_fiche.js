@@ -81,7 +81,7 @@ function displayFilmCarroussel(id, cat, group) {
 }
 
 function displayBestFilm() {
-  fetch("http://localhost:8000/api/v1/titles/9008642").then((response) => response.json())
+  fetch("http://localhost:8000/api/v1/titles/2562232").then((response) => response.json())
   .then((film) => {
 
     const imageElement = document.createElement("img");
@@ -108,7 +108,7 @@ function displayBestFilm() {
     bestfilmDiv.appendChild(bestfilminfoDiv);
 
     imageElement.onclick = function() {
-          displayModal(9008642);
+          displayModal(2562232);
         };
     const filmsListe = document.getElementById("best-film");
     filmsListe.appendChild(bestfilmDiv);  
