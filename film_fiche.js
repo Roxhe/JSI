@@ -128,15 +128,15 @@ function displayModal(id) {
         <div class = "movie-info">
         <span class="close-modal" id="cross">&times;</span>
             <ul class = "movie-misc-info">
-                <li class = "rated modal-text">Ratings: ${film.rated}</li>
-                <li class = "released modal-text">Released: ${film.date_published}</li>
+                <li class = "rated modal-text">Note: ${film.rated}</li>
+                <li class = "released modal-text">Publication: ${film.date_published}</li>
             </ul>
-            <p class = "genres modal-text"><b>Genre:</b> ${film.genres}</p>
-            <p class = "writers modal-text"><b>Writer:</b> ${film.writers}</p>
-            <p class = "actors modal-text"><b>Actors: </b>${film.actors}</p>
+            <p class = "genres modal-text"><b>Genre(s):</b> ${film.genres}</p>
+            <p class = "writers modal-text"><b>Auteur.ice(s):</b> ${film.writers}</p>
+            <p class = "actors modal-text"><b>Acteur.ice(s): </b>${film.actors}</p>
             <p class = "long-description modal-text"><b>Description:</b> ${film.long_description}</p>
-            <p class = "languages modal-text"><b>Language(s):</b> ${film.languages}</p>
-            <p class = "box-office modal-text"><b>Worlwide gross income :</b> ${film.worldwide_gross_income}$</p>
+            <p class = "languages modal-text"><b>Langage(s):</b> ${film.languages}</p>
+            <p class = "box-office modal-text"><b>BoxOffice Mondial :</b> ${film.worldwide_gross_income}$</p>
         </div>
       </div>
     `;
@@ -154,10 +154,6 @@ function displayModal(id) {
 
   });
 }
-
-
-
-
 
 window.onclick = function(event) {
   if (event.target == document.getElementById("mymodal")) {
