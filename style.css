@@ -8,6 +8,7 @@ body {
   .wrapper {
     max-width: 1500px;
     margin: 0 auto;
+    margin-bottom: 5%;
   }
 
   .main-title {
@@ -120,6 +121,15 @@ body {
 
   .list-item {
     display: none;
+  }
+
+  @-webkit-keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   @keyframes fadeInOpacity {
