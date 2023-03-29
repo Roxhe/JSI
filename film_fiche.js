@@ -180,14 +180,18 @@ fetch('http://localhost:8000/api/v1/titles/?sort_by=-votes%2C-imdb_score&page_si
     }
   })
 
-const groupInd = [1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3]
-const idsCat2 = [2130, 574, 1892, 2101, 2199, 2423, 2452, 4066, 4099, 4134, 4150, 4181, 4457, 4465, 4635, 4681, 4707, 4712, 4743, 4766, 4825];
-for (let i = 0; i < idsCat2.length; i++) {
-  const id = idsCat2[i];
-  const group = groupInd[i];
-  displayFilmCarroussel(id, "cat-2", group);
-
-}
+  fetch('http://localhost:8000/api/v1/titles/?sort_by=-votes%2C-imdb_score&genre=comedy&page_size=21')
+  .then(response => response.json())
+  .then(data => {
+    const idsCat2 = data.results.map(film => film.id);
+    const groupInd = [1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3]
+    console.log(idsCat2)
+    for (let i = 0; i < idsCat2.length; i++) {
+      const id = idsCat2[i];
+      const group = groupInd[i];
+      displayFilmCarroussel(id, "cat-2", group);
+    }
+  })
 
 const idsCat3 = [2130, 574, 1892, 2101, 2199, 2423, 2452, 4066, 4099, 4134, 4150, 4181, 4457, 4465, 4635, 4681, 4707, 4712, 4743, 4766, 4825];
 for (let i = 0; i < idsCat3.length; i++) {
