@@ -206,7 +206,7 @@ fetch('http://localhost:8000/api/v1/titles/?sort_by=-votes%2C-imdb_score&genre=h
   }
 })
 
-fetch('http://localhost:8000/api/v1/titles/?sort_by=-votes%2C-imdb_score&genre=musical&page_size=21')
+fetch('http://localhost:8000/api/v1/titles/?sort_by=-votes%2C-imdb_score&actor=Tom+Hanks&page_size=21')
 .then(response => response.json())
 .then(data => {
   const idsCat4 = data.results.map(film => film.id);
