@@ -139,7 +139,6 @@ function displayModal(id) {
             <p class = "long-description modal-text"><b>Description:</b> ${film.long_description}</p>
             <p class = "languages modal-text"><b>Langage(s):</b> ${film.languages}</p>
             <p class = "box-office modal-text"><b>BoxOffice Mondial :</b> ${film.worldwide_gross_income}$</p>
-            <p class = "Durée modal-text"><b>Genre(s):</b> ${film.genres}</p>
         </div>
       </div>
     `;
