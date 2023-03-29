@@ -5,6 +5,11 @@ body {
     margin: 0;
   }
   
+  .wrapper {
+    max-width: 1500px; /* Largeur maximale de votre body */
+    margin: 0 auto; /* Marge automatique sur les côtés gauche et droit */
+  }
+
   .main-title {
     font-size: 2.5em;
     color: #a5b4fc;
