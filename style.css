@@ -6,8 +6,8 @@ body {
   }
   
   .wrapper {
-    max-width: 1500px; /* Largeur maximale de votre body */
-    margin: 0 auto; /* Marge automatique sur les côtés gauche et droit */
+    max-width: 1500px;
+    margin: 0 auto;
   }
 
   .main-title {
